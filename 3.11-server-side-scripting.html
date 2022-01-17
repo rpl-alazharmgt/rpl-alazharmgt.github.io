@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Server Side Scripting</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">RPL Al-Azhar</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://twitter.com/Sindyajaaa" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/sindy.dwil" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/sindyydl_/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/sindy-dwi-lestari-1a54a01b9/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+		  <a href="https://narotama.ac.id/" class="google"><i class="bx bxl-google"></i></a>
+        </div>
+      </div>
+
+     <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="about.html" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+		  <li><a href="profile.html" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Profile</span></a></li>
+          <li><a href="resume.html" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="portfolio.html" class="nav-link scrollto active"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="contact.html" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Server Side Scripting</h2>
+          <ol>
+            <li>
+				<p>Materi Bisa Download <a href="https://drive.google.com/file/d/11DSjNH_3Px93RQPgHJoMlPgnWnzlhNfJ/view?usp=sharing">DISINI</a></p>
+			</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+		 <div class="row gy-4">
+
+          <div class="col-lg-12">
+            <div class="portfolio-info">
+					<h3>Kompetensi Dasar :</h3>
+						<p> 3.11 Menerapkan pemrograman server side scripting</p>
+						<p> 4.11 Membuat kode program pada server side scripting</p>
+					<h3>Materi Pokok :</h3>
+						<p> 1. Konsep Server Side Scripting</p>
+						<p> 2. Macam Macam Aplikasi Server Side Scripting </p>
+						<p> 3. Stuktur Server Side Script</p>
+						<p> 4. Program Server Side Script Dengan HTML</p>
+						<p> 5. PPerintah Dasar Dan Syntax Server Side</p>
+			</div>
+		  </div>
+		  </div>
+	</div>
+   </section><!-- End Portfolio Details Section -->
+   
+	    <!-- ======= Struktur Section ======= -->
+    <section id="Struktur" class="Struktur">
+      <div class="container">
+
+        <div class="section-title">
+
+				<h2>Konsep Server Side Scripting</h2>   
+					<p style="text-indent: 45px;"><b>Server side programming</b> adalah jenis bahasa pemrograman yang nantinya script/program tersebut akan dijalankan/diproses oleh server. Selanjutnya hasil pengolahan script/program tersebut akan dikirim ke client.</p>
+		</br>
+					<p>Server Side Programming memungkinkan sebagian besar pekerjaan yang berkaitan dengan memproses kode harus dilakukan oleh server. Contohnya seperti PHP yang nantinya akan diterjemahkan oleh mesin PHP ke kode HTML terlebih dahulu sebelum diterjemahkan browser untuk ditampilkan di layar klien. Selain Server Side Programming ada juga yang namanya Client Side Programming, tetapi untuk saat ini saya tidak akan membahas Client Side Programming dan kemungkinan akan saya bahas di post mendatang.</p>
+		</br>		
+					<p><b>Keuntungan</b> utama dari Server-side Script adalah kemampuan untuk  mengatur response berdasarkan keperluan user, hak akses, atau query ke  dalam data store.</p>
+		</br>
+						<div>
+							<img src="assets/img/portfolio/7.jpg" class="img-fluid" alt="">
+						</div>
+			</br>
+		</br>
+		</br>
+		</br>
+				<h2>Macam Macam Aplikasi Server Side Scripting</h2>
+					<p>Contoh dari Server Side Programming ada banyak dan memang mempunyai kelemahan dan kelebihan masing-masing, namun semua dari program Server Side Programming mempunyai persamaan yaitu control dan berikut beberapa contoh dari server side programming.</p>
+						<li>Active Server Pages (ASP)</li>
+						<li>PHP : Hypertext Preprocessor (PHP)</li>
+						<li>Java Server Pages (JSP)</li>
+						<li>Lasso</li>
+						<li>ColdFusion</li>
+		</br>
+		</br>
+		</br>
+				<h2>Stuktur Server Side Script</h2>
+						<div>
+							<img src="assets/img/portfolio/8.jpg" class="img-fluid" alt="">
+						</div>
+		</br>
+		</br>
+					<h5><b>PHP Pemrosesan data berbasis server side</b></h5>
+						<p>Didalam kita membangun sebuah web terdiri dari beberapa komponen diantaranya adalah HTML ( HyperText Markup Language ) sebagai bahasa web yang pemrosesannya di proses di sisi klien. Kemudian ada juga CSS ( Cascading Style Sheets ) yang sama dengan HTML pemrosesannya dari sisi klien. Sedangkan PHP pemrosesan data berada di sisi server (server side).</p></br>
+			</br>
+					<h3><b>Struktur Dasar PHP</b></h3>
+						<p>PHP mempunyai struktur yang sederhana. Syntax PHP dimulai dengan tanda &lt;?php dan di akhiri dengan ?></p></br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+<?php
+// Syntax PHP dapat dibuat disini
+?>
+</xmp>
+						</td>	
+						</tr>
+						</table>
+		</div>		
+				</br>
+						<div>
+							<img src="assets/img/portfolio/contoh85.jpg" class="img-fluid" alt="">
+						</div>
+				</br>		
+						<p>Ekstensi file PHP bisa dibuat dengan ekstensi .php (dot php) seperti pada contoh gambar diatas saya membuat nama filenya struktur-dasar.php</p>
+				</br>
+						<h4><b>A. Variabel</b></h4>
+							<p>Digunakan untuk menyimpan sebuah value, data atau informasi.</p>
+								<ul>
+								<li>Nama variabel diawali dengan tanda $</li>
+								<li>Panjang tidak terbatas</li>
+								<li>Setelah tanda $ diawali oleh huruf atau under-scrore (_). Karakter berikutnya bisa terdiri dari huruf, angka, dan karakter tertentu yang diperbolehkan (karakter ASCII dari 127 – 255).</li>
+								<li>Bersifat case-sensitive.</li>
+								<li>Tidak perlu dideklarasikan.</li>
+								<li>Tidak boleh mengandung spasi.</li>
+								</ul>
+				</br>
+							<p>Contoh :</p>
+				</br>
+								<div>
+									<img src="assets/img/portfolio/contoh86.jpg" class="img-fluid" alt="">
+								</div>
+				</br>
+				</br>
+						<h4><b>B. Tipe Data</b></h4>
+							<p>Pada PHP, tipe data variabel tidak didefinisikan oleh programmer, akan tetapi secara otomatis ditentukan oleh intepreter PHP. Namun demikian, PHP mendukung 8 (delapan) buah tipe data primitif, yaitu :</p>
+							<ul>
+							<p>
+							1. boolean</br>
+							2. integer</br>
+							3. float</br>
+							4. string</br>
+							5. array</br>
+							6. object</br>
+							7. resource</br>
+							8. NULL
+							</p>
+							</ul>
+				</br>
+							<p>Contoh :</p>
+				</br>
+								<div>
+									<img src="assets/img/portfolio/contoh87.jpg" class="img-fluid" alt="">
+								</div>
+				</br>
+				</br>
+						<h4><b>C. Konstanta</b></h4>
+							<p>Konstanta merupakan variabel konstan yang nilainya tidak berubah-ubah. Untuk mendefinisikan konstanta dalam PHP, menggunakan fungsi define().</p>
+				</br>
+							<p>Contoh :</p>
+				</br>
+								<div>
+									<img src="assets/img/portfolio/contoh88.jpg" class="img-fluid" alt="">
+								</div>
+				</br>
+				</br>
+						<h4><b>D. Operator</b></h4>
+								<div>
+									<img src="assets/img/portfolio/contoh89.jpg" class="img-fluid" alt="">
+								</div>
+				</br>
+								<div>
+									<img src="assets/img/portfolio/contoh90.jpg" class="img-fluid" alt="">
+								</div>
+				</br>
+				</br>
+						<h4><b>E. Komentar</b></h4>
+							<p>Dalam PHP, komentar program bisa menggunakan :  /* dan */ ,  // , dan  #</p>
+				</br>
+							<p>Contoh :</p>
+				</br>
+								<div>
+									<img src="assets/img/portfolio/contoh91.jpg" class="img-fluid" alt="">
+								</div>
+		</br>
+		</br>
+		</br>
+				<h2>Program Server Side Script Dengan HTML</h2>
+					<p>Sebelum kode-kode pemrograman yang berada di server dikirim ke klien kode-kode tersebut diproses oleh server untuk diterjemahkan. Berikut ilustrasi cara kerja Server Side Programming.</br>
+						<div>
+							<img src="assets/img/portfolio/contoh84.jpg" class="img-fluid" alt="">
+						</div>
+		</br>
+					Gambar ilustrasi Server Side Programming diatas yang menggunakan bahasa pemrograman PHP sehingga bisa sampai menjadi html biasa :</br>
+					1. Pertama user (Client) melakukan request ke server melalui web browser di komputernya.</br>
+					2. Server akan merespon request dari klien untuk kemudian di proses.</br>
+					3. Setelah pemrosesan selesai kemudian server mengirim respon ke klien dalam format html.</br>
+					4. Kemudian web browser klien menerima kode-kode yang sudah berformat html dan sekarang web browser memiliki tugas untuk menyusun kode-kode html itu menjadi sebuah tampilan yang akan ditampilkan di desktop. Tugas web browser seperti inilah dinamakan Client Side Programming.</p>
+		</br>
+		<div>
+				<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class="embed-container"><iframe src="https://www.youtube.com/embed/o7yWBitKuoY" frameBorder="0"></iframe></div>
+		</div>
+		</br>
+		</br>
+		</br>
+				<h2>Perintah Dasar Dan Syntax PHP</h2>
+					<h5><b>1. <i>IF – ELSEIF – ELSE</i></b></h5>
+						<p>Seperti namanya, kode PHP ini berfungsi sebagai penyeleksi kondisi “jika kondisi terpenuhi” (IF), “jika kondisi lain yang terpenuhi (ELSEIF, dari kata ELSE IF yang digabung), dan “jika semua kondisi tidak terpenuhi” (ELSE). Sebagai contoh, kode di bawah ini berisi dua variabel yang berisi nilai ber-<b>type data</b> integer (angka) dan nantinya akan di bandingkan menggunakan <b>operator pembanding</b>.</p>
+			</br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+<?php
+if ($a > $b) {
+    echo "$a lebih besar dari $b";
+} elseif ($a == $b) {
+    echo "$a sama dengan $b";
+} else {
+    echo "$a lebih kecil dari $b";
+}
+?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>
+			</br>
+			</br>
+					<h5><b>2. <i>SWITCH – CASE</i></b></h5>
+						<p>Fungsi <i>SWITCH – CASE</i> mirip dengan fungsi <i>IF</i> – ELSEIF – ELSE yaitu untuk menyeleksi kondisi yang bercabang. Hanya saja SWITCH – CASE lebih cocok di gunakan untuk menyeleksi nilai satu variabel yang memiliki banyak kemungkinan, sebagai contoh kode di bawah ini berisi satu variabel bernama “profesi” dengan  tiga kemungkinan nilai variabel yaitu “Polisi”, “Guru”, dan “Pilot”.</p>
+			</br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+<?php
+switch ($profesi) {
+    case "polisi":
+        echo "Profesi Saya adalah POLISI";
+        break;
+    case "guru":
+        echo "Profesi Saya adalah GURU"; 
+        break;
+    case "pilot":
+        echo "Profesi Saya adalah PILOT"; 
+        break;
+}
+?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>
+			</br>
+			</br>
+					<h3><b>Struktur Perulangan</b></h3>
+						<h5><b>3. <i>FOR</i></b></h5>
+							<p>Kode FOR pada PHP di gunakan untuk melakukan perulangan atau proses secara berulang.</br>
+								Struktur utama fungsi FOR adalah sebagai berikut:</p></br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+for (ekspresi1; ekspresi2; ekspresi3){
+    pernyataan;
+}
+</xmp>								
+						</td>
+						</tr>
+						</table>
+		</div>
+			</br>
+						<p><b>Keterangan :</p></b>
+							<li>Ekspresi pertama (ekspresi1) di evaluasi atau di jalankan tanpa syarat pada awal perulangan, “ekspresi1” biasanya berupa variabel yang memiliki nilai yang di gunakan sebagai nilai awal suatu perulangan.</li>
+							<li>Ekspresi kedua (ekspresi2) di evaluasi pada awal setiap perulangan, jika hasil evaluasi bernilai TRUE ( kondisi terpenuhi ) maka perulangan di lanjutkan, jika hasil evaluasi bernilai FALSE ( kondisi tidak terpenuhi ) maka perulangan di hentikan.</li>
+							<li>Ekspresi ketiga (ekspresi3) di evaluasi pada akhir setiap perulangan, “ekspresi3” berisi perintah yang harus di lakukan apabila hasil evaluasi “ekspresi2” bernilai TRUE dan perulangan di lanjutkan.</li>
+					</br>	
+						<p>Silahkan perhatikan contoh sederhana perulangan dengan FOR di bawah ini, kode di bawah ini akan menampilkan angka 1 sampai 10:</p></br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+<?php
+for ($i = 1; $i <= 10; $i++) {
+    echo $i;
+}
+?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>
+			</br>	
+						<p><b>Keterangan :</b></p>
+							<li>$i = 1 merupakan ekspresi pertama yang berisi nilai awal suatu perulangan, artinya perulangan di mulai dari angka “1”.</li>
+							<li>$i &lt;= 10 merupakan ekspresi kedua yang akan di evaluasi pada awal setiap perulangan, jika variabel $1 memiliki nilai lebih dari sama dengan ( &lt; = ) 10 maka perulangan akan dilanjutkan, jika tidak maka perulangan akan di hentikan. Artinya perulangan akan terus di lakukan selama nilai dari variabel $i tidak lebih dari 10.</li>
+							<li>$i++ merupakan ekspresi ketiga yang berisi perintah untuk mengembalikan nilai $i kemudian di tambah 1 apabila ekspresi kedua bernilai TRUE, itu berarti apabila ekspresi kedua bernilai 8 ( TRUE, karena 8 &lt;=10 ) maka variabel $i bernilai 8+1. tanda “++” di depan variabel $i merupakan operator <i>increment (post-increment)</i>.</li>
+			</br>
+			</br>
+						<h5><b>4. <i>FOREACH</i></b></h5>
+							<p>Perulangan menggunakan FOREACH memudahkan perulangan sebuah <i>array</i>, biasanya di gunakan untuk mengambil semua nilai yang ada pada suatu <i>array</i> dan menyimpannya ke sebuah variabel secara berulang, struktur dasar FOREACH adalah sebagai berikut:</p></br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+<?php
+foreach (array_expression sebagai $value)
+     pernyataan
+?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>
+			</br>
+						<p>Atau</p>
+			</br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+<?php
+foreach (array_expression sebagai $key => $value)
+     pernyataan
+?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>
+			</br>
+					<p>Perhatikan kode di bawah ini, sebuah array bernama “$anggota” memiliki tiga nilai, dan FOREACH di gunakan untuk menyimpan setiap nilai yang ada pada “$anggota” ke “$nama_anggota” secara berulang, artinya variabel “$nama_anggota” akan di isi dengan satu nilai dari array “$anggota” secara berulang ( ingat, variabel hanya memiliki satu nilai, sedangkan array bisa memiliki lebih dari dua nilai ).</p></br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+<?php
+$anggota = array("Ahmad", "Budi", "Cahya");
+
+foreach ($anggota as $nama_anggota) {
+    echo "Nama Anggota: $nama_anggota<br />\n";
+}
+?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>
+			</br>
+			</br>
+						<h5><b>5. <i>WHILE</i></b></h5>
+							<p>Perulangan dengan WHILE adalah perulangan yang paling sederhana di PHP. Bentuk dasar dari perulangan menggunakan WHILE adalah sebagai berikut :</p></br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+while (ekspresi) {
+   pernyataan
+}
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>
+			</br>
+						<p><b>Keterangan :</b></p>
+							<p>Perulangan <i>WHILE</i> hanya membutuhkan satu ekspresi yang akan di periksa setiap awal perulangan di lakukan, sehingga apabila sejak awal ekspresi tidak memenuhi kondisi yang di persyaratkan ( bernilai FALSE ), maka pernyataan tidak akan di proses sama sekali.</p>
+			</br>
+							<p>Lihat contoh kode PHP untuk perulangan sederhana di bawah ini, variabel $i bernilai 1 dan ekspresi ( kondisi yang di persyaratkan ) adalah variabel $i bernilai kurang dari sama dengan 10, artinya variabel $i harus bernilai 1 hingga 10, jika tidak maka ekspresi bernilai FALSE dan perulangan akan di hentikan / tidak akan di jalankan.</p>
+			</br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+<?php
+$i = 1;
+while ($i <= 10) {
+    echo $i++;
+}
+?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>
+			</br>
+			</br>
+						<h5><b>6. <i>DO – WHILE</i></b></h5>
+							<p>Perulangan dengan DO – WHILE sebenarnya sangat persis dengan perulangan menggunakan WHILE, hanya saja ekspresi di periksa pada akhir setiap perulangan, perbedaan utama dari perulangan WHILE adalah adanya “jaminan” perulangan pertama akan di jalankan ( jika menggunakan perulangan DO – WHILE ) karena status ( TRUE atau FALSE ) ekspresi hanya di periksa pada akhir setiap perulangan saja.</p></br>
+							<p>Perhatikan potongan kode berikut :</p>
+			</br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+<?php
+$i = 0;
+do {
+    echo $i;
+} while ($i > 0);
+?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>
+			</br>
+						<p><b>Keterangan :</b></p>
+							<p>Variabel $i bernilai 0, sedangkan ekspresi yang di syaratkan bernilai “$i > 0” ( artinya hasil pemeriksaan ekspresi bernilai FALSE ), namun nilai variabel $i tetap di tampilkan ( lihat baris ke 4 “echo $i” ), inilah perbedaan utama antara WHILE dengan DO – WHILE, yaitu tahapan perulangan dan ekspresi, perulangan WHILE memeriksa ekspresi terlebih dahulu kemudian melakukan perulangan, sedangkan DO – WHILE melakukan (do) perulangan terlebih dahulu baru memeriksa ekspresi.</p>
+			</br>
+			</br>
+						<h3><b>Fungsi Validasi</b></h3>
+							<h5><b>7. <i>EMPTY</i></b></h5>
+								<p>Kode EMPTY pada PHP merupakan salah satu fungsi built-in yang berfungsi untuk memvalidasi nilai suatu variabel apakah kosong atau telah memiliki nilai, jadi fungsi EMPTY memeriksa nilai dari variabel yang sudah ada, bukan memeriksa apakah suatu variabel ada atau tidak ada.</p></br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+<?php
+$usia = 0;
+if (empty($usia)) {
+    echo 'Variabel usia bernilai kosong atau 0';
+}
+?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>
+			</br>							
+			</br>
+						<h5><b>8. <i>ISSET</i></b></h5>
+							<p>Kode ISSET pada PHP merupakan salah satu fungsi built-in yang berfungsi untuk memvalidasi eksistensi suatu variabel apakah ada atau tidak ada, berbeda dengan fungsi EMPTY yang memeriksa nilai dari variabel yang sudah ada, fungsi ISSET memeriksa apakah variabel eksis ( ada ) atau tidak ada tanpa menghiraukan nilai yang ada dalam variabel tersebut ( kecuali NULL ).</p></br>
+							<p>Perhatikan potongan kode di bawah ini:</p>
+					</br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+<?php
+$nama = '';
+if (isset($nama)) {
+    echo "Variabel nama ada, evaluasi bernilai TRUE";
+}
+
+if (isset($alamat)) {
+    echo "Variabel alamat tidak ada, evaluasi bernilai FALSE";
+}
+?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>
+			</br>							
+			</br>
+						<h5><b>9. <i>UNSET</i></b></h5>
+							<p>Kode UNSET pada PHP merupakan salah satu fungsi built-in dengan fungsi utama untuk menghilangkan suatu variabel termasuk nilai yang ada di dalamnya.</p></br>
+							<p>Perhatikan potongan kode di bawah ini:</p>
+					</br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>					
+ 1. <?php
+ 2.   $nama='';
+ 3.   if (isset($nama)) {
+ 4.      echo "Variabel NAMA ada.<br>";
+ 5.   } else {
+ 6.      echo "Variabel NAMA tidak ada.";
+ 7.   }
+ 8.
+ 9.   unset($nama);
+10.
+11.   if (isset($nama)) {
+12.      echo "Variabel NAMA ada.";
+13.   } else {
+14.      echo "Variabel NAMA tidak ada.";
+15.   }
+16. ?>					
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>
+			</br>							
+							<p><b>Keterangan :</b></p>
+							<p>Variabel $nama ( lihat baris ke-2 ) di deklarasikan walaupun tidak memiliki nilai, artinya variabel $nama eksis atau ada, kemudian di periksa menggunakan fungsi ISSET ( lihat baris ke-3 ) dan tentu saja hasilnya TRUE ( “Variabel NAMA ada.” ), kemudian variabel nama di hilangkan dengan fungsi UNSET ( lihat baris ke-9 ) dan di periksa menggunakan fungsi ISSET ( lihat baris ke-11 ), hasilnya FALSE ( “Variabel NAMA tidak ada.” ).</p>
+			</br>
+			</br>
+						<h3><b>Pemeriksaan Variabel</b></h3>
+							<h5><b>10. <i>IS_ARRAY</i></b></h5>
+								<p>Kode IS_ARRAY merupakan salah satu kode PHP yang berfungsi untuk memeriksa suatu variabel apakah berjenis array atau bukan, sebagaimana telah kita singgung sebelumnya bahwa <i>variable</i> hanya dapat berisi satu nilai sedangkan <i>variable</i> yang memiliki banyak nilai di sebut <i>array</i>.</p></br>
+								
+								<p>Perhatikan kode di bawah ini:</p>
+					</br>			
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+ 1. <?php
+ 2.    $penulis = array('Adam','Benny','Carla');
+ 3.    $domain = "DosenIT.com";
+ 4.
+ 5.    if (is_array($penulis)) {
+ 6.       echo "Variabel 'penulis' adalah ARRAY.";
+ 7.    } else {
+ 8.       echo "Variabel 'penulis' BUKAN ARRAY.";
+ 9.    }
+10.
+11.    echo "<br/>";
+12.
+13.    if (is_array($domain)){
+14.        echo "Variabel 'domain' adalah ARRAY.";
+15.    } else {
+16.        echo "Variabel 'domain' BUKAN ARRAY.";
+17.    }
+18. ?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>
+			</br>
+						<p><b>Keterangan :</b></p>
+							<p>Terdapat dua variabel dengan nama $penulis yang di atur sebagai array ( memiliki banyak nilai, dalam hal ini tiga nilai ) dan variabel dengan nama $domain yang hanya berisi satu nilai ( berjenis data string ) di deklarasikan pada baris ke-2 dan ke-3, variabel tersebut kemudian di periksa ( di validasi ) menggunakan fungsi IS_ARRAY ( lihat baris ke-5 dan baris ke-13 ) dan variabel “penulis” bernilai TRUE ( “Variabel ‘penulis’ adalah ARRAY.” ) sedangkan variabel “domain” bernilai FALSE ( “Variabel ‘domain’ BUKAN ARRAY.” ).</p>
+			</br>
+			</br>
+						<h5><b>11. <i>IS_INT</i></b></h5>
+							<p>Integer merupakan tipe data yang berisi nilai bilangan bulat, fungsi IS_INT memeriksa apakah suatu variabel memiliki nilai bertipe data integer atau bukan, perhatikan contoh kode di bawah ini, terdapat empat variabel dengan nilai yang bervariasi, variabel pertama ($variabel1) bertipe data integer, variabel kedua ($variabel2) bertipe data string, variabel ketiga ($variabel3) bertipe data float, dan variabel keempat ($variabel4) bertipe data string.</p></br>
+				</br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+ 1. <?php
+ 2. $variabel1 = 23;
+ 3. $variabel2 = "23";
+ 4. $variabel3 = 23.5;
+ 5. $variabel4 = "23.5";
+ 6. 
+ 7. if (is_int($variabel1)){
+ 8.    echo "Variabel 1 merupakan integer, TRUE.";
+ 9. } else {
+10.    echo "Variabel 1 bukan integer, FALSE.";
+11. }
+12. 
+13. echo "<br/>";
+14. 
+15. if (is_int($variabel2)){
+16.    echo "Variabel 2 merupakan integer, TRUE.";
+17. } else {
+18.    echo "Variabel 2 bukan integer, FALSE.";
+19. }
+20. 
+21. echo "<br/>";
+22. 
+23. if (is_int($variabel3)){
+24.    echo "Variabel 3 merupakan integer, TRUE.";
+25. } else {
+26.    echo "Variabel 3 bukan integer, FALSE.";
+27. }
+28. 
+29. echo "<br/>";
+30.
+31. if (is_int($variabel4)){
+32.    echo "Variabel 4 merupakan integer, TRUE.";
+33. } else {
+34.    echo "Variabel 4 bukan integer, FALSE.";
+35. }
+36. ?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>
+			</br>
+			</br>
+						<h5><b>12. <i>IS_FLOAT</i></b></h5>
+							<p>Secara sederhana, tipe data float ( juga di kenal sebagai “floating-point”, “double”, atau “real number” ) merupakan tipe data yang memuat nilai numerik pecahan, berbeda dengan tipe data integer, float mendukung nilai pecahan dengan titik sebagai pemisahnya ( nilai pecahan di tulis 12.34 bukan dengan koma 12,34 ).</p></br>
+							<p>Perhatikan contoh kode di bawah ini, struktur kode sengaja Saya samakan dengan validasi IS_INT:</p>
+					</br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>	
+ 1. <?php
+ 2. $variabel1 = 23;
+ 3. $variabel2 = "23";
+ 4. $variabel3 = 23.5;
+ 5. $variabel4 = "23.5";
+ 6. 
+ 7. if (is_float($variabel1)){
+ 8. echo "Variabel 1 merupakan float, TRUE.";
+ 9. } else {
+10.    echo "Variabel 1 bukan float, FALSE.";
+11. }
+12. 
+13. echo "<br/>";
+14. 
+15. if (is_float($variabel2)){
+16.    echo "Variabel 2 merupakan float, TRUE.";
+17. } else {
+18.    echo "Variabel 2 bukan float, FALSE.";
+19. }
+20. 
+21. echo "<br/>";
+22. 
+23. if (is_float($variabel3)){
+24.    echo "Variabel 3 merupakan float, TRUE.";
+25. } else {
+26.    echo "Variabel 3 bukan float, FALSE.";
+27. }
+28. 
+29. echo "<br/>";
+30.
+31. if (is_float($variabel4)){
+32.    echo "Variabel 4 merupakan float, TRUE.";
+33. } else {
+34.    echo "Variabel 4 bukan float, FALSE.";
+35. }
+36. ?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>
+			</br>
+			</br>
+						<h5><b>13. <i>IS_BOOL</i></b></h5>
+							<p>Boolean merupakan tipe data yang merepresentasikan nilai ‘true’ atau ‘false’ dari suatu variabel, fungsi IS_BOOL memeriksa nilai suatu variabel apakah bernilai ‘true’ / ‘false’ atau tidak, perlu di garis bawahi bahwa penulisan ‘true’ atau ‘false’ bersifat case-insensitive sehingga penulisan ‘TRUE’ dengan ‘true’ di anggap sama.</p>
+				</br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+ 1. <?php
+ 2. $variabel1 = TRUE;
+ 3. $variabel2 = "TRUE";
+ 4. $variabel3 = FALSE;
+ 5. $variabel4 = "FALSE";
+ 6. 
+ 7. if (is_bool($variabel1)){
+ 8. echo "Variabel 1 merupakan boolean, TRUE.";
+ 9. } else {
+10.    echo "Variabel 1 bukan boolean, FALSE.";
+11. }
+12. 
+13. echo "<br/>";
+14. 
+15. if (is_bool($variabel2)){
+16.    echo "Variabel 2 merupakan boolean, TRUE.";
+17. } else {
+18.    echo "Variabel 2 bukan boolean, FALSE.";
+19. }
+20. 
+21. echo "<br/>";
+22. 
+23. if (is_bool($variabel3)){
+24.    echo "Variabel 3 merupakan boolean, TRUE.";
+25. } else {
+26.    echo "Variabel 3 bukan boolean, FALSE.";
+27. }
+28. 
+29. echo "<br/>";
+30.
+31. if (is_bool($variabel4)){
+32.    echo "Variabel 4 merupakan boolean, TRUE.";
+33. } else {
+34.    echo "Variabel 4 bukan boolean, FALSE.";
+35. }
+36. ?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>
+			</br>
+			</br>
+					<h5><b>Contoh Program Aplikasi Halaman Web dengan Server Side Scripting</b></h5>
+						<p>File PHP adalah file yang berekstensi *.php, diawali dengan sintaks (&lt;?php) dan diakhiri dengan sintaks (?>).</p>
+			</br>
+					<p><b>Contoh :</b></p>
+			</br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+<?php
+
+echo "Halo dunia!";
+?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>			
+			</br>
+						<p>Untuk menjalankannya aktifkan XAMPP localhost lalu jalankan di web browser.</p>
+			</br>
+						<div>
+							<img src="assets/img/portfolio/contoh92.JPG" class="img-fluid" alt="">
+						</div>
+			</br>
+			<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class="embed-container"><iframe src="https://www.youtube.com/embed/D1Bff0KXgXw" frameBorder="0"></iframe></div>
+	</div>
+	</div>
+   </section><!-- End Portfolio Details Section -->
+	
+	
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Sindy Dwi Lestari</span></strong>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

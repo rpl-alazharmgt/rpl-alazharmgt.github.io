@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Operasi File</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">RPL Al-Azhar</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://twitter.com/Sindyajaaa" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/sindy.dwil" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/sindyydl_/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/sindy-dwi-lestari-1a54a01b9/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+		  <a href="https://narotama.ac.id/" class="google"><i class="bx bxl-google"></i></a>
+        </div>
+      </div>
+
+     <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="about.html" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+		  <li><a href="profile.html" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Profile</span></a></li>
+          <li><a href="resume.html" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="portfolio.html" class="nav-link scrollto active"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="contact.html" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>File Operation</h2>
+          <ol>
+            <li>
+				<p>Materi Bisa Download <a href="https://drive.google.com/file/d/14-Cs98rwWVYR45myRLyJnigUk6L5Pd5q/view?usp=sharing">DISINI</a></p>
+			</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-12">
+            <div class="portfolio-info">
+					<h3>Kompetensi Dasar :</h3>
+						<p>3.16 Menerapkan operasi file</p>
+						<p>4.16 Membuat kode program untuk operasi file</p>
+					<h3>Materi Pokok :</h3>
+						<p> 1.  Mengenal File Operation.</p>
+						<p> 2.  Menerapkan library dalam perangkat lunak server side.</p>
+			</div>
+		  </div>
+		</div>
+	</div>
+   </section><!-- End Portfolio Details Section -->
+   
+	    <!-- ======= Struktur Section ======= -->
+    <section id="Struktur" class="Struktur">
+      <div class="container">
+
+        <div class="section-title">
+
+					<h2>Operasi dasar pada File</h2>
+							<p>Operasi file merupakan salah satu proses yang terjadi di dalam pemrograman, operasi ini akan membaca proses input dan output.</br>
+								Dalam management file dan direktori, PHP menyediakan lebih dari 70 fungsi. Beberapa fungsi utama yang berhubungan dengan management file (create, write,modify, dan delete).</p>
+				</br>
+							<p>Gambar Struktur File :</p>
+									<div>
+											<img src="assets/img/portfolio/contoh130.jpg" class="img-fluid" alt="">
+									</div>
+							<p><i>Catatan : record adalah nama lain dari struktur (struct).</i></p>
+				</br>
+							<h4><b>Tahapan Operasi File :</b></h4>
+								<p>Operasi pada file pada dasarnya meliputi tiga tahapan, yaitu :</p>
+									<li>1.    Membuka/mengaktifkan file</li>
+									<li>2.    Melaksanakan proses file</li>
+									<li>3.    Menutup file</li>
+				</br>
+				</br>
+						<h2>Membuka / Mengaktifkan File</h2>
+							<div>
+									<img src="assets/img/portfolio/21.jpg" class="img-fluid" alt="">
+							</div>
+				</br>
+								<p>Sebelum file dapat diakses (dibaca atau ditulisi), mula-mula file haruslah diaktifkan terlebih dahulu.  Untuk keperluan ini fungsi yang digunakan yaitu fopen().  Bentuk deklarasinya adalah sebagai berikut :</p>
+								<p>Sintaksnya :</p>
+				</br>
+								<p><b><i>FILE *fopen(char *namafile, char *mode);</i></b></p>
+				</br>
+								<p><b>Keterangan :</b></p>
+									<li><b>Nama File</b> : adalah string dengan isi nama file yang akan dibuat.</li>
+									<li><b>Mode akses</b> : adalah argumen modul operasi yang akan dilakukan terhadap file tersebut.</li>
+									<li>prototipe ada pada file <b>stdio.h</b></li>
+				</br>
+								<p>Jenis operasi file dapat berupa salah satu di antara mode berikut :</p>
+									<p><b>r</b>  : menyatakan file hanya akan dibaca, jika file belum ada  maka tidak akan berhasil.</p>
+									<p><b>r+</b> : untuk membuka file yang sudah ada, dan operasi yang akan dilakukan berupa pembacaan serta penulisan.</p>
+									<p><b>w</b>  : menyatakan bahwa file baru diciptakan. Jika file tersebut  sudah ada dalam disk, isinya yang lama akan terhapus.</p>
+									<p><b>w+</b> : untuk membuka file dengan tujuan untuk pembacaan atau penulisan.  Jika file sudah ada, isinya akan dihapus.</p>
+									<p><b>a</b>  : untuk membuka file yang sudah ada untuk ditambah  dengan data, jika file belum ada akan dibuat yang baru.</p>
+									<p><b>a+</b> : untuk membuka file, dengan operasi yang dapat dilakukan berupa perekaman maupun pembacaan. Jika file sudah ada, isinya tak akan dihapus.</p>
+				</br>		
+								<p>Contoh Kasus :</p>
+									<li>Fopenr.php(tanpa fclose r)</li>
+									<li>Fopenw.php(w)</li>
+									<li>Fopen1.php(r)</li>
+									<li>Fopenw+.php(w+)</li>
+									<li>Fopena.php(a)</li>
+				</br>
+				</br>
+						<h2>Membaca Isi File</h2>	
+								<h4><b><u>fgets()</u></b></h4>
+									<p>Digunakan untuk membaca data dari file per baris.</p>
+										<p>Sintaksnya :</p>
+				</br>
+											<p><b><i>$variabel=fgets(fp,panjang_data)</i></b></p>
+				</br>
+										<p><b>Keterangan :</b></p>
+											<li><b>Fp</b> : file/data yg akan dibaca</li>
+											<li><b>Panjang data</b> : panjang-1 </li>
+											<li>Jika panjang data tidak dinyatakan maka panjang default 1 kb ( 1024 byte)</li>
+											<p>Misal :</p>
+											<p>Buatlah file <i>telepon.txt</i></p>
+						</br>
+										<p>Contoh :</p>
+											<li>Fgets.php</li>
+											<li>Fgets1.php</li>
+						</br>
+				</br>
+								<h4><b><u>Fread</u></b></h4>
+									<p>Fungsi dari fread yaitu membaca data yang terdapat pada file dalam mode biner.</p>
+									<p>Sintaksnya :</p>
+						</br>
+											<p><b><i>$variabel=fread(“nama_file,panjang data”);</i></b></p>
+						</br>
+									<p>Contoh fread :</p>
+				</br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+$fp=fopen("telepon.txt","r");
+while($isi=fread($fp,25))  // panjang karakter 24 ( n-1)
+{
+echo "$isi <br>";
+}
+?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>	
+				</br>
+								<h4><b><u>Readfile</u></b></h4>
+									<p>Fungsi dari Readfile Membaca seluruh file dan langsung dituliskan ke standar output. Hasil pembacaan langsung disimpan ke dalam sebuah variabel.</p>
+										<p>Sintaksnya :</p>
+						</br>
+											<p><b><i>Readfile (namafile,path);</i></b></p>
+						</br>
+									<p>Contoh Readfile :</p>
+						</br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+<?php
+$isi=readfile("telepon.txt");
+echo "$isi <br>";
+?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>	
+				</br>
+				</br>
+							<h2>Operasi Menulis ke File</h2>
+				</br>
+								<h4><b><u>fputs()</u></b></h4>
+									<p>Fungsi dari fputs yaitu digunakan untuk menuliskan kedalam file.</p>
+				</br>
+								<p>Contoh fputs :</p>
+				</br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+<?
+$namafile=“puts.txt";
+$datakita=“farel, tia, 432456";
+$fp=fopen($namafile,"w");
+fputs($fp,$datakita);
+fclose($fp);
+echo "berhasil membuat file $namafile";
+?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>	
+				</br>
+				</br>
+								<h4><b><u>fwrite()</u></b></h4>
+									<p>Fungsi dari fwrite yaitu digunakan untuk menuliskan data file sebagai string data.</p>
+				</br>
+										<p>Sintaksnya :</p>
+				</br>
+											<p><b><i>fputs(fp,string str,panjang string)</i></b></p>
+				</br>
+										<p><b>Keterangan :</b></p>
+											<li><b>fp</b> : file yg akan digunakan</li>
+											<li><b>String str</b> : data yang ingin direkam atau dituliskan</li>
+											<li><b>Panjang string</b> : jlh string yg akan disimpan.Jika tdk dinyatakan maka seluruh data akan drekam.</li>			
+				</br>
+								<p>Contoh fwrite :</p>
+				</br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+<?php
+$namafile = “tulis.txt";
+$handle = fopen ($namafile, "w");
+if (!$handle) {
+echo "<b>File tidak dapat dibuka atau belum ada</b>";
+} else {
+fwrite ($handle, "Saya lagi belajar PHP\n");
+fputs ($handle, "Menulis dan mengoperasikan File\n");
+//file_put_contents ($namafile, “Medan");
+echo "<b>File berhasil ditulis</b>";
+}
+fclose($handle);
+?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>	
+				</br>
+				</br>
+							<h4><b><u>Copy</u></b></h4>
+								<p>Copy adalah suatu sistem yang digunakan untuk menggandakan sebuah kata, paragraf, tabel, gambar, dan object apa pun.</p>
+								<p>Fungsi : copy(string source,string dest)</p>
+				</br>
+								<p>Contoh Copy :</p>
+				</br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+<?php
+$hasil= copy("data.txt","trial.txt");
+if ($hasil)
+{
+ print("coba.txt sukses dicopykan!");
+ }
+ else
+ {
+ print("coba.txt gagal dicopy");
+ }
+?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>	
+				</br>
+				</br>
+							<h4><b><u>Rename & unlink</u></b></h4>
+									<p>Fungsi <b><i>Rename</i></b> digunakan untuk mengganti nama suatu file.</p>
+				</br>
+										<p><b>Sintaksnya :</b></p>
+				</br>
+											<p><i> rename(string oldname,string newname)</i></p>
+				</br>
+									<p>Fungsi <b><i>Unlink</i></b> digunakan untuk menghapus suatu file secara permanen.</p>
+				</br>	
+										<p><b>Sintaksnya :</b></p>
+											<p><i>Unlink(string filename)</i></p>
+				</br>
+									<p>Contoh Rename & unlink :</p>
+				</br>
+<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+<?php
+$file = "data.txt";
+$filebaru = "databaru.txt";
+$filebaru2 = "databaru2.txt";
+if (copy ($file, $filebaru)) {
+echo "File <b>$file</b> berhasil dicopy menjadi
+<b>$filebaru</b>. <br>";
+}
+if (rename ($filebaru, $filebaru2)) {
+echo "File <b>$filebaru</b> berhasil direname menjadi
+<b>$filebaru2</b>. <br>";
+}
+if (unlink ($filebaru2)) {
+echo "File <b>$filebaru2</b> berhasil dihapus. <br>";
+}
+?>
+</xmp>
+						</td>
+						</tr>
+						</table>
+		</div>	
+				</br>
+				</br>
+							<h4><b><u>File Exists</u></b></h4>
+								<p>Fungsi File Exists yaitu untuk mengetahui ada/tidaknya suatu file.</p>
+				</br>
+							<p>Sintaksnya :</p>
+				</br>
+								<p><b><i>file_exists(string filename)</i></b></p>
+				</br>
+							<p><i>Keterangan :</i></p>
+				</br>
+								<p><b>string filename</b> = file yg akan diketahui</p>
+				</br>
+							<p>Contoh : exit.php</p>
+				</br>
+				</br>
+							<h4><b><u>Fileatime</u></b></h4>
+									<p>Fungsi dari <i>fileatime</i> yakni Digunakan untuk mengetahui waktu terakhir suatu file diakses.</p>
+				</br>
+								<p>Sintaksnya :</p>
+				</br>
+										<p><b><i>fileatime ( filename )</i></b></p>
+				</br>
+								<p>Nilai balik fungsi adalah time sesuai formatnya sejak tgl 1 Jan 1970.</p>
+				</br>
+				</br>
+							<h4><b><u>Filectime</u></b></h4>
+									<p>Fungsi dari <i>filectime</i> yakni untuk mengetahui waktu terakhir suatu file berubah (di tulis, diubah izin aksesnya).</p>
+				</br>
+									<p>Sintaksnya :</p>
+				</br>
+											<p><b><i>filectime ( filename )</i></b></p>
+				</br>
+				</br>
+							<h4><b><u>Filemtime</u></b></h4>
+									<p>Fungsi dari <i>filemtime</i> yakni untuk mengetahui waktu terakhir suatu file berubah (di tulis, diubah isinya).</p>
+				</br>
+									<p>Sintaksnya :</p>
+				</br>
+											<p><b><i>filemtime ( filename )</i></b></p>
+
+
+				</br>
+				</br>
+				</br>
+					<h2>Tugas Siswa</h2>
+							<p>Buatlah buku alamat dengan menggunakan fungsi operasi file.</p>
+								<li>1. Buat buku_alamat.html</li>
+								<li>2. simpan_alamat.php</li>
+								<li>3. baca_alamat.php</li>
+				</br>
+							<h4><b>Contoh Buku alamat.html</b></h4>
+				</br>
+									<div>
+										<img src="assets/img/portfolio/contoh131.jpg" class="img-fluid" alt="">
+									</div>
+				</br>
+				</br>
+							<h4><b>Contoh Buku alamat.php</b></h4>
+				</br>
+									<div>
+										<img src="assets/img/portfolio/contoh132.jpg" class="img-fluid" alt="">
+									</div>
+				</br>
+				</br>
+									<div>
+										<img src="assets/img/portfolio/contoh133.jpg" class="img-fluid" alt="">
+									</div>
+				</br>
+				
+		  </div>
+	</div>
+   </section><!-- End Portfolio Details Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Sindy Dwi Lestari</span></strong>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

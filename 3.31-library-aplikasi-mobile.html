@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Library Aplikasi Mobile</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">RPL Al-Azhar</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://twitter.com/Sindyajaaa" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/sindy.dwil" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/sindyydl_/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/sindy-dwi-lestari-1a54a01b9/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+		  <a href="https://narotama.ac.id/" class="google"><i class="bx bxl-google"></i></a>
+        </div>
+      </div>
+
+     <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="about.html" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+		  <li><a href="profile.html" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Profile</span></a></li>
+          <li><a href="resume.html" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="portfolio.html" class="nav-link scrollto active"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="contact.html" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Library Aplikasi Mobile</h2>
+          <ol>
+            <li>
+				<p>Materi Bisa Download <a href="https://drive.google.com/file/d/1iwloqCX_BRlj1l4zEoe_oc_vYGzuFTcB/view?usp=sharing">DISINI</a></p>
+			</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-12	">
+            <div class="portfolio-info">
+					<h3>Kompetensi Dasar :</h3>
+						<p>3.31 Mengevaluasi penggunaan library pada aplikasi mobile</p>
+						<p>4.31 Memodifikasi aplikasi mobile menggunakan library</p>
+					<h3>Materi Pokok :</h3>
+						<p> 1. Konsep Library Aplikasi Mobile.</p>
+						<p> 2.  Membuat modul library.</p>
+						<p> 3.  Mengonversi modul aplikasi menjadi modul library.</p>
+						<p> 4. Menambahkan dependensi dengan Project Structure Dialog.</p>
+						<p> 5. Memilih resource yang akan dijadikan publik.</p>
+						
+			</div>
+		  </div>
+		</div>
+	</div>
+   </section><!-- End Portfolio Details Section -->
+
+	    <!-- ======= Struktur Section ======= -->
+    <section id="Struktur" class="Struktur">
+      <div class="container">
+
+        <div class="section-title">
+		
+					<h2>Konsep Library Aplikasi Mobile</h2>
+						<p>Library Android secara struktural sama dengan modul aplikasi Android. Library ini dapat mencakup semua yang diperlukan untuk mem-build aplikasi, termasuk kode sumber, file resource, dan manifes Android. Namun, library Android tidak dikompilasi ke dalam APK yang berjalan di perangkat, melainkan dikompilasi ke dalam file Android Archive (AAR) yang dapat Anda gunakan sebagai dependensi untuk modul aplikasi Android.</p>
+			</br>
+						<p>File AAR menawarkan fungsi berikut untuk aplikasi Android:</p>
+						<ul>
+						<li>File AAR dapat berisi resource Android dan file manifes, yang memungkinkan Anda membuat bundle dalam resource bersama seperti tata letak dan drawable selain class dan metode Java.</li>
+						<li>File AAR dapat berisi library C/C++ untuk digunakan oleh kode C/C++ modul aplikasi.</li>
+						</ul>
+			</br>
+						<p>Modul library berguna dalam situasi berikut:</p>
+						<ul>
+						<li>Saat Anda mem-build beberapa aplikasi yang menggunakan sejumlah komponen yang sama, misalnya aktivitas, layanan, atau tata letak UI.</li>
+						<li>Saat Anda mem-build aplikasi yang ada dalam beberapa variasi APK, misalnya versi gratis dan berbayar, dan Anda membutuhkan komponen inti yang sama dalam kedua versi tersebut.</li>
+						</ul>
+			</br>
+						<p>Dalam kasus ini, cukup pindahkan file yang ingin digunakan kembali ke dalam modul library, lalu tambahkan library sebagai dependensi untuk setiap modul aplikasi. Halaman ini mengajarkan cara melakukan keduanya.</p>
+			</br>
+			</br>
+			</br>
+					<h2>Membuat modul library</h2>
+						<p>Untuk membuat modul library dalam project Anda, lakukan langkah berikut:</p>
+						<p>1. Klik <b>File > New > New Module</b>.</p>
+						<p>2. Di jendela <b>Create New Module</b> yang muncul, klik <b>Android Library</b>, lalu klik <b>Next</b>.</p></br>
+						<p>Terdapat juga opsi untuk membuat <b>Java Library</b>, yang mem-build file JAR tradisional. Meskipun berguna untuk banyak project, terutama bila ingin membagikan kode dengan platform lain, file JAR tidak memungkinkan Anda menyertakan file manifes atau resource Android, yang sangat berguna untuk penggunaan kembali kode dalam project Android. Jadi, panduan ini berfokus pada pembuatan library Android.</p></br>
+						<p>3. Beri nama library Anda dan pilih versi SDK minimum untuk kode dalam library, lalu klik <b>Finish</b>.</p>
+			</br>
+						<p>Setelah sinkronisasi project Gradle selesai, modul library muncul dalam panel Project di sebelah kiri. Jika Anda tidak melihat folder modul baru, pastikan folder tersebut menampilkan tampilan Android.</p>
+			</br>
+			</br>
+			</br>
+					<h2>Mengonversi modul aplikasi menjadi modul library</h2>
+						<p>Jika sudah memiliki modul aplikasi yang memuat semua kode yang ingin digunakan kembali, Anda dapat mengubahnya menjadi modul library dengan cara berikut:</p></br>
+						<p>1. Buka file build.gradle level modul.</p>
+						<p>2. Hapus baris untuk applicationId. Hanya modul aplikasi Android yang dapat menentukan baris ini.</p>
+						<p>3. Di bagian atas file, Anda akan melihat kode berikut :</p>
+		</br>
+		<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+  plugins {
+    id 'com.android.application'
+  }
+</xmp>
+							</td>
+							</tr>
+							</table>
+			</div>	
+					</br>
+						<p>Ubah menjadi seperti berikut:</p>
+		</br>
+		<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+  plugins {
+      id 'com.android.library'
+  }
+  
+</xmp>
+							</td>
+							</tr>
+							</table>
+			</div>	
+					</br>
+						<p>4. Simpan file, lalu klik <b>File > Sync Project with Gradle Files</b>.</p>
+			</br>
+						<p>Selesai. Struktur keseluruhan modul tetap sama, tetapi sekarang beroperasi sebagai library Android dan build kini akan membuat file AAR, bukan APK.</p>
+			</br>
+						<p>Bila Anda ingin mem-build file AAR, pilih modul library dalam jendela Project dan kemudian klik <b>Build > Build APK</b>.</p>
+			</br>
+			</br>
+			</br>
+					<h2>Menambahkan dependensi dengan Project Structure Dialog</h2>
+						<h4><b>Menggunakan library Anda dari dalam project yang sama</b></h4>
+							<p>Menggunakan library Anda dari dalam project yang sama</p>
+							<p>1. Buka <b>File > Project Structure > Dependencies</b>.</p>
+							<p>2. Pilih Modul tempat Anda akan menggunakan library.</p>
+							<p>3. Pada tab <b>Declared Dependencies</b>, klik , lalu pilih <b>Module Dependency</b> dalam dropdown.</p>
+			</br>
+							<div>
+									<img src="assets/img/portfolio/113.jpg" class="img-fluid" alt="">
+							</div>		
+			</br>
+							<p>4. Dalam dialog Add Module Dependency, pilih modul library Anda.</p>
+			</br>
+							<div>
+									<img src="assets/img/portfolio/114.jpg" class="img-fluid" alt="">
+							</div>		
+			</br>						
+							<p>5. Pilih konfigurasi yang memerlukan dependensi ini, atau pilih "penerapan" jika sesuai untuk semua konfigurasi, lalu klik OK.</p>
+							</ul>
+			</br>
+			</br>
+							<p>Studio akan mengedit file build.gradle modul Anda untuk menambahkan dependensi formulir:</p>
+			</br>
+		<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+implementation(project(path: ":example-library"))
+</xmp>
+							</td>
+							</tr>
+							</table>
+			</div>	
+					</br>			
+					</br>
+					</br>
+							<h4><b>Menggunakan library Anda dalam project lain</b></h4>
+								<p>Untuk menggunakan kode library Android Anda dalam modul aplikasi lain, lakukan langkah berikut:</p>
+								<p>1. Buka <b>File > Project Structure > Dependencies</b>.</p>
+								<p>2. Pada tab <b>Declared Dependencies</b>, klik , lalu pilih <b>Dependensi Library</b> dalam dropdown.</p>
+					</br>
+							<div>
+									<img src="assets/img/portfolio/115.jpg" class="img-fluid" alt="">
+							</div>					
+					</br>
+								<p>3. Pada dialog <b>Add Library Dependency</b>, gunakan kotak pencarian guna menemukan library untuk ditambahkan. Formulir ini menelusuri repositori yang ditentukan dalam file build project di blok repositories.</p>
+					</br>
+							<div>
+									<img src="assets/img/portfolio/116.jpg" class="img-fluid" alt="">
+							</div>					
+					</br>						
+								<p>4. Pilih konfigurasi yang memerlukan dependensi ini, atau pilih "penerapan" jika sesuai untuk semua konfigurasi.</p>
+								<p>5. Periksa file build.gradle aplikasi untuk mengonfirmasi deklarasi yang mirip dengan berikut (bergantung pada konfigurasi build yang Anda pilih):</p>
+								</ul>
+			</br>
+		<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+implementation 'com.example:examplelibrary:1.0.0'
+</xmp>
+							</td>
+							</tr>
+							</table>
+			</div>	
+					</br>			
+					</br>
+					</br>
+							<h4><b>Menambahkan AAR atau JAR sebagai dependensi</b></h4>
+								<p>Untuk menggunakan kode library Android Anda dalam modul aplikasi lain, lakukan langkah berikut:</p>
+								<p>1. Buka <b>File > Project Structure > Dependencies</b>.</p>
+								<p>2. Pada tab <b>Declared Dependencies</b>, klik , lalu pilih <b>Jar Dependency</b> dalam dropdown.</p>
+			</br>
+							<div>
+									<img src="assets/img/portfolio/117.jpg" class="img-fluid" alt="">
+							</div>
+			</br>
+								<p>3. Pada dialog <b>Add Jar/Aar Dependency</b>, pertama-tama masukkan jalur ke file .aar atau .jar, lalu pilih konfigurasi tempat dependensi tersebut berlaku. Jika library harus tersedia untuk semua konfigurasi, pilih konfigurasi "penerapan".</p>
+			</br>
+							<div>
+									<img src="assets/img/portfolio/118.jpg" class="img-fluid" alt="">
+							</div>
+			</br>	
+								<p>4. Periksa file build.gradle aplikasi untuk mengonfirmasi deklarasi yang mirip dengan berikut (bergantung pada konfigurasi build yang Anda pilih):</p>
+			</br>
+		<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+implementation files('my_path/my_lib.aar')
+</xmp>
+							</td>
+							</tr>
+							</table>
+			</div>	
+					</br>			
+								<p>Atau, jika Anda menjalankan build Gradle di luar Android Studio, dependensi dapat diimpor dengan menambahkan lokasi ke dependensi dalam file build.gradle aplikasi Anda.</p>
+								<p>Contoh:</p>
+			</br>
+		<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
+    ...
+}
+</xmp>
+							</td>
+							</tr>
+							</table>
+			</div>	
+					</br>			
+					</br>	
+					</br>
+							<h2>Memilih resource yang akan dijadikan publik</h2>
+								<p>Semua resource dalam library secara default bersifat publik. Agar pengguna library tidak dapat mengakses resource yang hanya ditujukan untuk penggunaan internal, sebaiknya menggunakan mekanisme penetapan pribadi otomatis ini dengan mendeklarasikan satu atau beberapa resource publik.</p></br>
+								<p>Contohnya :</p></br>
+								<p>Untuk mendeklarasikan resource publik, tambahkan deklarasi <i>&lt;public></i> ke file <i>public.xml</i> library Anda. Jika belum pernah menambahkan resource publik, Anda perlu membuat file <i>public.xml</i> dalam direktori <i>res/values/</i> library Anda.</p></br>
+								<p>Kode contoh berikut membuat dua resource string publik dengan nama mylib_app_name dan mylib_public_string:</p>
+			</br>
+		<div class="table-responsive">
+    <table id="productSizes" class="table">
+						<tr>
+						<td>
+<xmp>
+<resources>
+    <public name="mylib_app_name" type="string"/>
+    <public name="mylib_public_string" type="string"/>
+</resources>
+</xmp>
+							</td>
+							</tr>
+							</table>
+			</div>	
+					</br>			
+							<p>Anda harus menjadikan semua resource yang diinginkan bersifat publik agar tetap terlihat oleh developer yang menggunakan library Anda.</p>
+			</br>
+			</br>				
+			</br>								
+							<h2>Pertimbangan pengembangan untuk modul library</h2>
+								<li>Konflik penggabungan resource</li>
+								<li>Dalam build multi-modul, dependensi JAR dianggap sebagai dependensi transitif</li>
+								<li>Modul library dapat bergantung pada library JAR eksternal</li>
+								<li>minSdkVersion modul aplikasi harus sama dengan atau lebih baru daripada versi yang ditentukan oleh library</li>
+								<li>Setiap modul library membuat class R-nya sendiri</li>
+								<li>Modul library dapat menyertakan file konfigurasi ProGuard-nya sendiri</li>
+								<li>Menguji modul library sama dengan menguji aplikasi</li>
+			</br>
+			</br>
+			</br>
+					<h2>Anatomi file AAR</h2>
+						<p>Ekstensi file AAR adalah .aar, dan jenis artefak Mavennya juga harus aar. Filenya sendiri adalah file zip. Satu-satunya entri wajib adalah /AndroidManifest.xml.</p>
+			</br>
+						<p>Selain itu, file AAR dapat menyertakan satu atau beberapa entri opsional berikut:</p>
+						<ul>
+						<li>/classes.jar</li>
+						<li>/res/</li>
+						<li>/R.txt</li>
+						<li>/public.txt</li>
+						<li>/assets/</li>
+						<li>/libs/name.jar</li>
+						<li>/jni/abi_name/name.so (dengan abi_name adalah salah satu ABI yang didukung Android)</li>
+						<li>/proguard.txt</li>
+						<li>/lint.jar</li>
+						<li>/api.jar</li>
+						<li>/prefab/ untuk mengekspor library native</li>
+						</ul>		
+        </div>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Sindy Dwi Lestari</span></strong>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
