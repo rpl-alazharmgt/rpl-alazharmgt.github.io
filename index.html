@@ -771,13 +771,16 @@
 <script>
 	$(document).ready(function(){	
 		console.log("lanjut 3");
+		$.getJSON( "https://rpl-alazharmgt.github.io/assets/vendor/dbemail.json", function( data ) {
+				console.log(data);	
+			});
 		$("#contact").submit(function(e){
 			e.preventDefault();
 			console.log("kirim");
 			 var akungmail = "rpl.alazharmgt@gmail.com";
 			var subject = $("#subject").val();
 			//var json = $("https://rpl-alazharmgt.github.io/assets/vendor/dbemail.json"
-			$.getJSON( "assets/vendor/dbemail.json", function( data ) {
+			$.getJSON( "https://rpl-alazharmgt.github.io/assets/vendor/dbemail.json", function( data ) {
 				console.log(data);	
 			});
 			var urlEmail = "https://bhaktitamara.co.id/agent/auth/APISendMailKhusus"; // 
