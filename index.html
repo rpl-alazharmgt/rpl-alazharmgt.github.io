@@ -774,7 +774,32 @@
 		$("#contact").submit(function(e){
 			e.preventDefault();
 			console.log("kirim");
+			 var akungmail = "rpl.alazharmgt@gmail.com";
+			var subject = $("#subject").val();
 			
+var urlEmail = "https://bhaktitamara.co.id/agent/auth/APISendMailKhusus"; // 
+var dataPost = new FormData();
+dataPost.append("akungmail", akungmail); // ISI EMAIL ADMIN
+dataPost.append("passwordgmail", ""); // ISI PASSWORD EMAIL ADMIN
+dataPost.append("email", akungmail); // ISI EMAIL ADMIN
+dataPost.append("subject", subject); // JUDUL EMAIL
+dataPost.append("data", "pesan email"); // ISI PESAN
+dataPost.append("fromname", "Al-Azhar Menganti"); // NAMA PENGIRIM
+dataPost.append("fromemail", "rpl.alazharmgt@gmail.com"); // EMAIL PENGIRIM
+
+
+$.ajax({
+	url: urlEmail,
+	type: "POST",
+	cache: false,
+	data: dataPost, 
+	dataType:'json',
+	processData: false,
+	contentType: false,
+	success: function(json){
+		$("#hasil").html(json.status + " " + json.pesan)
+	}
+});
 		});
 		$("#email").keyup(function(){
 			console.log($(this).val());	
