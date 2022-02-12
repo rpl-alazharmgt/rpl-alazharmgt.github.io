@@ -773,10 +773,12 @@
   const form = document.forms['contact-form']
 console.log("lanjut 1");
   form.addEventListener('submit', e => {
-    e.preventDefault()
+    e.preventDefault();
+    $("#loading").css("display","block");
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then((response) => {
 	    form.reset();
+    $("#loading").css("display","none");
 	    console.log('Success!', response);
 	    alert("Pesan berhasil dikirim");
     })
