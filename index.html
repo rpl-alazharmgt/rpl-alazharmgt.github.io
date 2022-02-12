@@ -771,14 +771,14 @@
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzkzKugDq_6wy9nG1KUI2J7cjmLWX3AxcY4H1LyaKUnOaSQWWwqAR6rWL9LklMn-Fn-Qw/exec'
   const form = document.forms['contact-form']
-console.log("lanjut 1");
+console.log("lanjut 2");
   form.addEventListener('submit', e => {
     e.preventDefault();
-    $("#loading").css("display","block");
+    $(".loading").css("display","block");
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then((response) => {
 	    form.reset();
-    $("#loading").css("display","none");
+    $(".loading").css("display","none");
 	    console.log('Success!', response);
 	    alert("Pesan berhasil dikirim");
     })
