@@ -704,7 +704,7 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" id="contact" class="php-email-form">
+            <form name="contact-form" action="forms/contact.php" method="post" role="form" id="contact" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -770,6 +770,16 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzkzKugDq_6wy9nG1KUI2J7cjmLWX3AxcY4H1LyaKUnOaSQWWwqAR6rWL9LklMn-Fn-Qw/exec'
+  const form = document.forms['contact-form']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
 <script>
 	$(document).ready(function(){	
 		console.log("lanjut 4");
