@@ -775,10 +775,11 @@ console.log("lanjut 1");
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => 
+      .then(response => {
+	    form.reset();
 	    console.log('Success!', response);
 	    alert("Pesan berhasil dikirim");
-    	)
+    })
       .catch(error => console.error('Error!', error.message))
   })
 </script>
