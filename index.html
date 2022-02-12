@@ -777,79 +777,12 @@
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response => function(response){
+	    console.log('Success!', response);
+	    alert("Pesan berhasil dikirim");
+    	})
       .catch(error => console.error('Error!', error.message))
   })
-</script>
-<script>
-	$(document).ready(function(){	
-		console.log("lanjut 5");
-		//$.getJSON( "https://rpl-alazharmgt.github.io/assets/vendor/dbemail.json", function( data ) {
-		//		console.log(data);	
-		//	});
-		$("#contact").submit(function(e){
-			e.preventDefault();
-			console.log("kirim");
-			//var akungmail = "rpl.alazharmgt@gmail.com";
-			var akungmail = "bt.residence@gmail.com";
-			var no = 12345567;
-			//var pwd = "rplalazharmgt123";
-			var pwd = "BT123456";
-			var subject = $("#subject").val();
-			var pesan = $("#pesan").val();
-			var name = $("#name").val();
-			var email = $("#email").val();
-
-			//var json = $("https://rpl-alazharmgt.github.io/assets/vendor/dbemail.json"
-		//	$.getJSON( "https://rpl-alazharmgt.github.io/assets/vendor/dbemail.json", function( data ) {
-		//		console.log(data);	
-		//	});
-			var urlEmail = "https://bhaktitamara.co.id/agent/auth/APISendMailKhusus"; // 
-			var dataPost = new FormData();
-			dataPost.append("akungmail", akungmail); // ISI EMAIL ADMIN
-			dataPost.append("passwordgmail", pwd); // ISI PASSWORD EMAIL ADMIN
-			dataPost.append("email", akungmail); // ISI EMAIL ADMIN
-			dataPost.append("subject", subject); // JUDUL EMAIL
-			dataPost.append("data", pesan); // ISI PESAN
-			dataPost.append("fromname", name); // NAMA PENGIRIM
-			dataPost.append("fromemail", email); // EMAIL PENGIRIM
-			
-			console.log(dataPost);
-
-			$.ajax({
-				url: urlEmail,
-				type: "POST",
-				cache: false,
-				data: dataPost, 
-				dataType:'json',
-				processData: false,
-				contentType: false
-				
-			})
-			.done(function( json ) {
-				console.log(json);
-				alert(json.pesan);
-			     // $( "<h1>" ).text( json.title ).appendTo( "body" );
-			     // $( "<div class=\"content\">").html( json.html ).appendTo( "body" );
-			  })
-			  // Code to run if the request fails; the raw request and
-			  // status codes are passed to the function
-			  .fail(function( xhr, status, errorThrown ) {
-			    //alert( "Sorry, there was a problem!" );
-			    console.log( "Error: " + errorThrown );
-			    console.log( "Status: " + status );
-			    console.dir( xhr );
-			  })
-			  // Code to run regardless of success or failure;
-			  .always(function( xhr, status ) {
-			    console.log( "The request is complete!" );
-			  });
-
-		});
-		$("#email").keyup(function(){
-			console.log($(this).val());	
-		});
-	});
 </script>
 </body>
 
